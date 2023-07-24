@@ -1,12 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Landing from "./Landing";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Teams from "./Teams";
 function App() {
   return (
-    <div className="App">
-      <Landing></Landing>
-    </div>
+    <BrowserRouter>
+      <div className="App"></div>
+      <Routes>
+        <Route path="/" element={<Landing />}></Route>
+        <Route path="/teams" element={<Teams />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

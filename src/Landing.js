@@ -6,7 +6,11 @@ import { Typography, Box, Avatar, Grid, Button } from "@mui/material";
 const Landing = () => {
   return (
     <div>
-      <Box sx={{ width: "100%", maxWidth: "500" }}>
+      <Grid
+        container
+        justifyContent="center"
+        sx={{ width: "100%", maxWidth: "500" }}
+      >
         <Typography sx={{ color: "#F88158" }} variant="h3">
           Welcome to BasketBlog
         </Typography>
@@ -28,7 +32,7 @@ const Landing = () => {
             Explore
           </Button>
         </Grid>
-      </Box>
+      </Grid>
     </div>
   );
 };
