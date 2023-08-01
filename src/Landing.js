@@ -28,7 +28,7 @@ const Landing = () => {
           ></Avatar>
         </Grid>
         <Grid container justifyContent="center">
-          <Button variant="outlined" size="large  ">
+          <Button variant="outlined" size="large" href="/teams">
             Explore
           </Button>
         </Grid>
