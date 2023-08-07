@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Teams from "./Teams";
 import Navbar from "./Navbar";
 import { useState } from "react";
+import TeamInfo from "./TeamInfo";
 function App() {
   const [value, setValue] = useState(0);
   const handleChange = (newValue) => {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />}></Route>
           <Route path="/teams" element={<Teams />}></Route>
+          <Route path="/teaminfo/:id" element={<TeamInfo />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
