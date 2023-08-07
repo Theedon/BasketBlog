@@ -11,11 +11,8 @@ import nbaLogo from "./images/nba.svg";
 import useFetch from "./useFetch.js";
 
 const Teams = () => {
-  const {
-    data: teams,
-    loading,
-    error,
-  } = useFetch("http://localhost:8000/teams");
+  const url = "http://localhost:8000/teams";
+  const { data: teams, loading, error } = useFetch(url);
 
   return (
     <Grid container justifyContent="center">
@@ -27,7 +24,7 @@ const Teams = () => {
             <List>
               {teams.map((team) => (
                 <ListItem key={teams.id}>
-                  <ListItemButton>
+                  <ListItemButton to={`/teaminfo/${team.id}`}>
                     <ListItemIcon>
                       <img src={nbaLogo} width={24} height={24}></img>
                     </ListItemIcon>
