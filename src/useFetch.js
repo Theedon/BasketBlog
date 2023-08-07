@@ -19,7 +19,6 @@ const useFetch = (jsonFilePath) => {
         setError(null);
       })
       .catch((error) => {
-        console.log("no");
         console.log(error);
         setError(error.message);
         setLoading(false);
