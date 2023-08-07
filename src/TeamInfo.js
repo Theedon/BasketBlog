@@ -8,22 +8,25 @@ const TeamInfo = () => {
   const { data, loading, error } = useFetch(url);
 
   return (
-    <div>
+    <div class="blog">
       {loading && <Typography variant="h3">Loading...</Typography>}
       {error && (
         <Typography variant="h3">Error retrieving team data</Typography>
       )}
       {data && (
-        <Grid className="blogInfo" justifyContent="center">
-          <Grid item>
-            <Typography variant="h5" gutterBottom>
-              {data.info}
-            </Typography>
+        <Grid container justifyContent="center">
+          <Grid item xs={3}></Grid>
+          <Grid item sx={{ marginTop: 5 }} xs={6} className="blogInfoGrid">
+            <Typography className="blogInfo">{data.info}</Typography>
           </Grid>
+          <Grid item xs={3}></Grid>
+
+          <Grid item xs={4}></Grid>
           <Grid item sx={{ marginTop: 5 }}>
-            <Typography variant="h2">Player List</Typography>
+            <Typography variant="h5">Player List</Typography>
             <Box>{/* have list of players here */}</Box>
           </Grid>
+          <Grid item xs={4}></Grid>
         </Grid>
       )}
     </div>
