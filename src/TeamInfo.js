@@ -8,7 +8,7 @@ const TeamInfo = () => {
   const { data, loading, error } = useFetch(url);
 
   return (
-    <div class="blog">
+    <div>
       {loading && <Typography variant="h3">Loading...</Typography>}
       {error && (
         <Typography variant="h3">Error retrieving team data</Typography>
