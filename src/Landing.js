@@ -18,17 +18,14 @@ const Landing = () => {
         justifyContent="center"
         sx={{ width: "100%", maxWidth: "500" }}
       >
-        <Typography sx={{ color: "#F88158" }} variant="h3" gutterBottom>
+        <Typography
+          sx={{ color: "#F88158", marginBottom: 7 }}
+          variant="h3"
+          gutterBottom
+        >
           Welcome to BasketBlog
-        </Typography>{" "}
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        </Typography>
+
         <Container>
           <img className="imageBox" src={basketball}></img>
         </Container>
@@ -36,13 +33,10 @@ const Landing = () => {
           <Avatar
             src={playerAvatar}
             alt="player avatar"
-            sx={{ width: 60, height: 70 }}
+            sx={{ width: 60, height: 70, marginBottom: 2 }}
           ></Avatar>
         </Grid>
-        <br />
-        <br />
-        <br />
-        <br />
+
         <Grid container justifyContent="center">
           <Button variant="outlined" size="large" href="/teams">
             Explore
