@@ -23,7 +23,7 @@ const Teams = () => {
           <nav aria-label="Team players">
             <List>
               {teams.map((team) => (
-                <ListItem key={teams.id}>
+                <ListItem key={team.id}>
                   <ListItemButton to={`/teaminfo/${team.id}`}>
                     <ListItemIcon>
                       <img src={nbaLogo} width={24} height={24}></img>
