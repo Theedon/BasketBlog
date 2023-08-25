@@ -27,7 +27,7 @@ const Players = () => {
                 <ListItem key={player.id}>
                   <ListItemButton
                     component={Link}
-                    to={`/playerinfo/${player.playerId}`}
+                    to={`/player/${player.playerId}`}
                   >
                     <ListItemIcon>
                       <Person3Icon />

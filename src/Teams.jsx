@@ -25,7 +25,7 @@ const Teams = () => {
             <List>
               {teams.map((team) => (
                 <ListItem key={team.id}>
-                  <ListItemButton component={Link} to={`/teaminfo/${team.id}`}>
+                  <ListItemButton component={Link} to={`/team/${team.id}`}>
                     <ListItemIcon>
                       <img src={nbaLogo} width={24} height={24}></img>
                     </ListItemIcon>
