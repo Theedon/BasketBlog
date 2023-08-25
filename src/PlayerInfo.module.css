@@ -3,7 +3,6 @@
 /* Define styles for the entire component */
 .playerInfoContainer {
   padding: 20px;
-  background-color: #fff;
 }
 
 /* Style for the loading and error messages */
@@ -19,8 +18,8 @@
 /* Style for player information */
 .playerInfoGrid {
   background-color: #ee6730;
-  border: 2px solid #ccc;
-  border-radius: 15px;
+  border: 10px solid #6a4325;
+  border-radius: 25px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

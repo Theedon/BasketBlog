@@ -19,7 +19,8 @@ const Landing = () => {
         sx={{ width: "100%", maxWidth: "500" }}
       >
         <Typography
-          sx={{ color: "#F88158", marginBottom: 7 }}
+          sx={{ marginBottom: 7 }}
+          color="primary"
           variant="h3"
           gutterBottom
         >
