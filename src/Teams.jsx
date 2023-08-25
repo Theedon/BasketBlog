@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import nbaLogo from "./images/nba.svg";
 import useFetch from "./useFetch.js";
+import { Link } from "react-router-dom";
 
 const Teams = () => {
   const url = "https://basketblog-api.vercel.app/teams";
@@ -24,7 +25,7 @@ const Teams = () => {
             <List>
               {teams.map((team) => (
                 <ListItem key={team.id}>
-                  <ListItemButton to={`/teaminfo/${team.id}`}>
+                  <ListItemButton component={Link} to={`/team/${team.id}`}>
                     <ListItemIcon>
                       <img src={nbaLogo} width={24} height={24}></img>
                     </ListItemIcon>

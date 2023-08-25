@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 const TeamInfo = () => {
   const { id } = useParams();
-  const url = `http://localhost:8000/teams/${id}`;
+  const url = `https://basketblog-api.vercel.app/teams/${id}`;
   const { data, loading, error } = useFetch(url);
 
   return (
