@@ -12,17 +12,17 @@ import useFetch from "./useFetch.js";
 
 const Teams = () => {
   const url = "https://basketblog-api.vercel.app/teams";
-  const { data, loading, error } = useFetch(url);
+  const { data: teams, loading, error } = useFetch(url);
 
   return (
     <Grid container justifyContent="center">
       <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
         {loading && <h2>Loading...</h2>}
         {error && <h2>Error accessing teams data {`\n${error}`}</h2>}
-        {data && (
+        {teams && (
           <nav aria-label="Team players">
             <List>
-              {data.teams.map((team) => (
+              {teams.map((team) => (
                 <ListItem key={team.id}>
                   <ListItemButton to={`/teaminfo/${team.id}`}>
                     <ListItemIcon>
