@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import { useState } from "react";
 import TeamInfo from "./TeamInfo";
 import Players from "./Players";
+import PlayerInfo from "./PlayerInfo";
 function App() {
   const [value, setValue] = useState(0);
   const handleChange = (newValue) => {
@@ -19,8 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />}></Route>
           <Route path="/teams" element={<Teams />}></Route>
-          <Route path="/teaminfo/:id" element={<TeamInfo />}></Route>
+          <Route path="/team/:id" element={<TeamInfo />}></Route>
           <Route path="/players" element={<Players />}></Route>
+          <Route path="/player/:id" element={<PlayerInfo />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

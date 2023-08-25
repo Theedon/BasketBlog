@@ -1,0 +1,26 @@
+/* PlayerInfo.module.css */
+
+/* Define styles for the entire component */
+.playerInfoContainer {
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Style for the loading and error messages */
+.loadingMessage,
+.errorMessage {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for player information */
+.playerInfoGrid {
+  background-color: #ee6730;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
