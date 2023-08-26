@@ -18,7 +18,7 @@
 /* Style for player information */
 .playerInfoGrid {
   background-color: #ee6730;
-  border: 10px solid #6a4325;
+  border: 5px solid #6a4325;
   border-radius: 25px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
