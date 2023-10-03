@@ -1,4 +1,4 @@
-import { Grid, Box, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import useFetch from "./useFetch";
 import { useParams } from "react-router-dom";
 import {
@@ -84,3 +84,4 @@ const TeamInfo = () => {
   );
 };
 export default TeamInfo;
+const a = "b";

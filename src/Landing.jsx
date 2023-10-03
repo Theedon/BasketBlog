@@ -1,14 +1,7 @@
 import basketball from "./images/basketball.png";
 import playerAvatar from "./images/jayson.jpg";
 import "./styles/Landing.modules.css";
-import {
-  Typography,
-  Container,
-  Box,
-  Avatar,
-  Grid,
-  Button,
-} from "@mui/material";
+import { Typography, Container, Avatar, Grid, Button } from "@mui/material";
 
 const Landing = () => {
   return (
